@@ -1,0 +1,17 @@
+login: &login
+    adapter: mysql
+    host: localhost
+    username: root
+    password:
+        
+development:
+    <<: *login
+    database: attic_antiques_development
+
+test:
+    <<: *login
+    database: attic_antiques_test
+
+production:
+    <<: *login
+    database: attic_antiques_production
