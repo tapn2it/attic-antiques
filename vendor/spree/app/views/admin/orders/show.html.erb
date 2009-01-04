@@ -1,0 +1,76 @@
+<% content_for :sub_menu do %>
+  <ul id="act-nav">
+    <li><%= link_to t("Resend"), resend_admin_order_url(@order), :method => :post %></li>
+  </ul>
+<% end %>
+
+<%= render :partial => 'shared/order_details', :locals => {:order => @order} -%>
+
+<% if @order.address || @order.creditcard_payment %>
+  <table class="order-address">
+    <tr>
+      <th><%= t("Ship Address") %></th>
+      <th><%= t("Bill Address") %></th>
+    </tr>
+    <tr>
+      <td width="50%">
+        <%= render :partial => 'address', :locals => {:address => @order.address} if @order.address%>      
+      </td>
+      <td width="50%">
+        <%= render :partial => 'address', :locals => {:address => @order.creditcard_payment.address} if @order.creditcard_payment%>
+      </td>
+    </tr>
+  </table>
+<% end %>
+<% if @order.user %>
+  <table class="order-address">
+    <tr>
+      <th><%= t("Email") %></th>
+    </tr>
+    <tr>
+      <td><%= @order.user.email if @order.user%></td>
+    </tr>
+  </table>
+<% end %>
+<table class="basic-table">
+  <tr>
+    <th><%= t("Event") %></th>
+    <th><%= t("User") %></th>
+    <th><%= "#{t('Date')}/#{t('Time')}" %></th>
+  </tr>
+  <% @order.state_events.sort.each do |event| %>
+    <tr>
+      <td><%=t("#{event.name}") %></td>
+      <td><%=event.user.email %></td>
+      <td><%=event.created_at.to_s(:db) %></td>
+    </tr>
+  <% end %>
+  <% if @order.state_events.empty? %>
+    <tr>
+      <td colspan="3"><%= t("None Available") %></td>
+    </tr>
+  <% end %>
+</table>
+
+<% if card = @order.creditcard_payment %>
+  <b><%= t("Credit Card")%>: </b> &nbsp; #<%= card.display_number %><br/>
+  <b><%= t("Type")%> : </b> &nbsp; <%= card.cc_type.titleize %><br/>
+  <table class="basic-table">
+    <tr>
+      <th><%= t("Transaction") %></th>
+      <th><%= t("Amount") %></th>
+      <th><%= t("Response Code") %></th>
+      <th><%= "#{t('Date')}/#{t('Time')}" %></th>
+    </tr>
+    <% card.txns.each do |t| %>
+      <tr>
+        <td><%=CreditcardTxn::TxnType.from_value t.txn_type.to_i%></td>
+        <td><%=number_to_currency t.amount%></td>
+        <td><%=t.response_code%></td>
+        <td><%=t.created_at.to_s(:db)%></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+
+<%= render_txn_partials @order %>

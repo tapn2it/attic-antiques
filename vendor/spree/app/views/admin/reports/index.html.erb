@@ -1,0 +1,28 @@
+<% content_for :head do %>
+  <%= calendar_date_select_includes %>
+<% end %>
+<h1><%= t("Listing reports") %></h1>
+<table>
+  <tr>
+    <td valign="top">
+      <div id="order-summary">
+        <table class="admin-report" width="515">
+          <thead>
+            <tr>
+              <th><%= t("Name") %></th>
+              <th><%= t("Description") %></th>
+            </tr>
+          </thead>
+          <tbody>     
+            <% @reports.each do |key, value| %>
+            <tr class="<%= cycle('even', 'odd') %>">
+              <td><%= link_to t(value[:name]), :action => key %></td>
+              <td><%= t(value[:description]) %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>

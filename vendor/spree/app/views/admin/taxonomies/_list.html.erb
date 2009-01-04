@@ -1,0 +1,18 @@
+<table class="admin-report">
+  <tr>
+    <th><%= :name.l("Name") %></th>
+    <th><%= :action.l("Action") %></th>
+  </tr>
+  
+<% for taxonomy in @taxonomies %>
+  <tr>
+	<td>
+	  <%= taxonomy.name %>
+    </td>
+    <td>
+      <%= link_to_edit taxonomy.id %> | <%= link_to_delete taxonomy %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
