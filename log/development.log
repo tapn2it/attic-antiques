@@ -11564,3 +11564,91 @@ INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/
 INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/payment_gateway/config/routes.rb
 INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/shipping/config/routes.rb
 INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/tax_calculator/config/routes.rb
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+INFO: Mirroring assets from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/localization/public to /Users/tapn2it/Projects/Attic/rails/attic-antiques/public
+INFO: Loading mail preferences
+DEPRECATION WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library will be REMOVED FROM RAILS 2.2. Please switch to the offical mysql gem: `gem install mysql`  See http://www.rubyonrails.org/deprecation for details. (called from mysql_connection at /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:81)
+  [4;36;1mSQL (0.000132)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.001768)[0m   [0mSHOW TABLES[0m
+  [4;36;1mAppConfiguration Columns (0.002120)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mAppConfiguration Load (0.000511)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`name` = 'Default configuration') AND ( (`configurations`.`type` = 'AppConfiguration' ) ) LIMIT 1[0m
+  [4;36;1mPreference Load (0.000774)[0m   [0;1mSELECT * FROM `preferences` WHERE (`preferences`.owner_id = 1 AND `preferences`.owner_type = 'Configuration' AND (`preferences`.`attribute` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL)) LIMIT 1[0m
+NOTICE: Mail not enabled
+  [4;35;1mSQL (0.001820)[0m   [0mSHOW TABLES[0m
+  [4;36;1mAppConfiguration Load (0.000447)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`name` = 'Default configuration') AND ( (`configurations`.`type` = 'AppConfiguration' ) ) LIMIT 1[0m
+Cache miss: Spree::Config ({})
+  [4;35;1mPreference Load (0.000550)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.owner_id = 1 AND `preferences`.owner_type = 'Configuration') [0m
+Cache write (will save 0.00083): Spree::Config
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: autoload hook invoked
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/localization/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/payment_gateway/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/shipping/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/tax_calculator/config/routes.rb
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+INFO: Mirroring assets from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/localization/public to /Users/tapn2it/Projects/Attic/rails/attic-antiques/public
+INFO: Loading mail preferences
+DEPRECATION WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library will be REMOVED FROM RAILS 2.2. Please switch to the offical mysql gem: `gem install mysql`  See http://www.rubyonrails.org/deprecation for details. (called from mysql_connection at /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:81)
+  [4;36;1mSQL (0.000168)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.001759)[0m   [0mSHOW TABLES[0m
+  [4;36;1mAppConfiguration Columns (0.001848)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mAppConfiguration Load (0.000628)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`name` = 'Default configuration') AND ( (`configurations`.`type` = 'AppConfiguration' ) ) LIMIT 1[0m
+  [4;36;1mPreference Load (0.000823)[0m   [0;1mSELECT * FROM `preferences` WHERE (`preferences`.owner_id = 1 AND `preferences`.owner_type = 'Configuration' AND (`preferences`.`attribute` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL)) LIMIT 1[0m
+NOTICE: Mail not enabled
+  [4;35;1mSQL (0.001739)[0m   [0mSHOW TABLES[0m
+  [4;36;1mAppConfiguration Load (0.000438)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`name` = 'Default configuration') AND ( (`configurations`.`type` = 'AppConfiguration' ) ) LIMIT 1[0m
+Cache miss: Spree::Config ({})
+  [4;35;1mPreference Load (0.000518)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.owner_id = 1 AND `preferences`.owner_type = 'Configuration') [0m
+Cache write (will save 0.00078): Spree::Config
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: autoload hook invoked
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/localization/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/payment_gateway/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/shipping/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/tax_calculator/config/routes.rb
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+INFO: Mirroring assets from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/localization/public to /Users/tapn2it/Projects/Attic/rails/attic-antiques/public
+INFO: Loading mail preferences
+DEPRECATION WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library will be REMOVED FROM RAILS 2.2. Please switch to the offical mysql gem: `gem install mysql`  See http://www.rubyonrails.org/deprecation for details. (called from mysql_connection at /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:81)
+  [4;36;1mSQL (0.000147)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.001755)[0m   [0mSHOW TABLES[0m
+  [4;36;1mAppConfiguration Columns (0.001683)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mAppConfiguration Load (0.000477)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`name` = 'Default configuration') AND ( (`configurations`.`type` = 'AppConfiguration' ) ) LIMIT 1[0m
+  [4;36;1mPreference Load (0.000723)[0m   [0;1mSELECT * FROM `preferences` WHERE (`preferences`.owner_id = 1 AND `preferences`.owner_type = 'Configuration' AND (`preferences`.`attribute` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL)) LIMIT 1[0m
+NOTICE: Mail not enabled
+  [4;35;1mSQL (0.001741)[0m   [0mSHOW TABLES[0m
+  [4;36;1mAppConfiguration Load (0.000437)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`name` = 'Default configuration') AND ( (`configurations`.`type` = 'AppConfiguration' ) ) LIMIT 1[0m
+Cache miss: Spree::Config ({})
+  [4;35;1mPreference Load (0.000565)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.owner_id = 1 AND `preferences`.owner_type = 'Configuration') [0m
+Cache write (will save 0.00085): Spree::Config
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: autoload hook invoked
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/localization/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/payment_gateway/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/shipping/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/tax_calculator/config/routes.rb
+** has_many_polymorphs: rails environment detected
+** has_many_polymorphs: loaded ok
+INFO: Mirroring assets from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/localization/public to /Users/tapn2it/Projects/Attic/rails/attic-antiques/public
+INFO: Loading mail preferences
+DEPRECATION WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library will be REMOVED FROM RAILS 2.2. Please switch to the offical mysql gem: `gem install mysql`  See http://www.rubyonrails.org/deprecation for details. (called from mysql_connection at /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/mysql_adapter.rb:81)
+  [4;36;1mSQL (0.000137)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.001672)[0m   [0mSHOW TABLES[0m
+  [4;36;1mAppConfiguration Columns (0.001954)[0m   [0;1mSHOW FIELDS FROM `configurations`[0m
+  [4;35;1mAppConfiguration Load (0.006793)[0m   [0mSELECT * FROM `configurations` WHERE (`configurations`.`name` = 'Default configuration') AND ( (`configurations`.`type` = 'AppConfiguration' ) ) LIMIT 1[0m
+  [4;36;1mPreference Load (0.000953)[0m   [0;1mSELECT * FROM `preferences` WHERE (`preferences`.owner_id = 1 AND `preferences`.owner_type = 'Configuration' AND (`preferences`.`attribute` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL)) LIMIT 1[0m
+NOTICE: Mail not enabled
+  [4;35;1mSQL (0.001715)[0m   [0mSHOW TABLES[0m
+  [4;36;1mAppConfiguration Load (0.000428)[0m   [0;1mSELECT * FROM `configurations` WHERE (`configurations`.`name` = 'Default configuration') AND ( (`configurations`.`type` = 'AppConfiguration' ) ) LIMIT 1[0m
+Cache miss: Spree::Config ({})
+  [4;35;1mPreference Load (0.000519)[0m   [0mSELECT * FROM `preferences` WHERE (`preferences`.owner_id = 1 AND `preferences`.owner_type = 'Configuration') [0m
+Cache write (will save 0.00080): Spree::Config
+** has_many_polymorphs: autoload hook invoked
+** has_many_polymorphs: autoload hook invoked
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/localization/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/payment_gateway/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/shipping/config/routes.rb
+INFO: Loading routes from /usr/local/lib/ruby/gems/1.8/gems/spree-0.5.99/vendor/extensions/tax_calculator/config/routes.rb
